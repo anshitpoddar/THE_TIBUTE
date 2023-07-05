@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Musical Instrument Tribute</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+  }
+  .bigboy {
+    max-width: 1000px;
+    padding:20px;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+   
+  }
+  
+  header h1 {
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(orange,yellow,crimson,red);
+  }
+  .press{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .instrument-info {
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(red,orange,transparent);
+  }
+  
+  .instrument-info img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .instrument-info h2 {
+    font-size: 24px;
+    color:black;
+    margin-bottom: 10px;
+  }
+  
+  .instrument-info p {
+    font-size: 16px;
+    color: black;
+  }
+
+  .tribute-section
+  {
+    border-radius: 20px;
+    background-image: linear-gradient(crimson,purple,transparent);
+  }
+  
+  .tribute-section h2 {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .tribute-section p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888888;
+  }
+  .button
+  {
+    color:#f2f2f2;
+    font-size: medium;
+    font-family:Impact, Haettenschweiler, sans-serif;
+    font-display:inherit;
+    text-align:center;
+    height:225px;
+    width:150px;
+    background-image: url("historytabla.jpg");
+border-radius: 25px;
+box-shadow: 10px 10px 10px black;
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    instrument-info h2 {
+      font-size: 20px;
+    }
+  
+    instrument-info p,
+    tribute-section p {
+      font-size: 14px;
+    }
+  }
+  
+  
+  </style>
+</head>
+<body>
+ <div class="bigboy">
+    <div class="container">
+        <header>
+          <h1>A TRIBUTE TO TABLA</h1>
+        </header>
+        <main>
+          <div class="instrument-info">
+            <img src="gettyimages-134172123-2048x2048.jpg" alt="Musical Instrument">
+            <p><b>Tabla</b> is the most famous percussion instrument of North India. It is most commonly used in North Indian classical music. Tabla, a set of two drums, is the modern caretaker of an ancient rhythmic tradition that is perhaps 5000 years old in a part of the world that is considered a birthplace of civilization.Its versatility in all musical styles has enabled it to become the most popular percussion instrument in all of India. The level of sophistication and tonal beauty it possesses has elevated the instrument to an unmatched status in the world of percussion.</p>
+          </div>
+          <div class="tribute-section">
+            <h2>About & About</h2>
+            <p>According to 'Random House Webster's Unabridged Dictionary', Tabla is a small drum or pair of drums of India tuned to different pitches and played with the hands1. All percussion instruments are basically used in Indian music for accompanying. Tabla is one of them. That is why, it is known very well as an accompany instrument. Music is accompanied by playing Tala on Tabla, and for this reason it is also known as a Tala vadya. Tabla can express the will and the passions of human beings, feelings and emotions being its burden in a variety and precision not possible to words. At the time of accompaniment Tabla is mainly used to maintain the time cycle in music, and thus thought to be the first cycle in order of succession. These rhythmical effects in music strongly appeal to the mind.</p>
+            <p>The meaning of Tabla' is the instrument or box with a leather surfaced — top. The word 'tabl' is being used to describe every percussion instrument like Pakhawaj, Dhol, Dholak etc. in Farsi language.</p>
+            <p>After dividing a Pakhawaj, it was able to play and dividing pieces were enable to produce sound. In this circumstance a Hindi word Tab bhi bola' was pronounced astonishingly, which means "even it is sounded". And day by day the word Tabla has evolved by corrupting from this word Tab bhi bola'. Dr. Yogmaya Shukla has discussed a way in her book how the word Tabla has come from Tab bhi bola'. According to her the process is like: Tab bhi bola' ->'Tabbola' -> Tabola" -> Tabla
+                According to Dr. Laxminarayan Garg, the word Tabla comes from 'Tabalu'. Garg says, "There was an instrument named 'tabalu' in Mesopotamian culture was found before Christ in 2000 B.C. After some times that tabalu was called as 'Tabla' clearly in Syrian music which was famous in Rome. From this base we can apprehend that, Arabian 'tubal' 'tabl' (attabul), 'a-tabl' 'atabal' 'atambal' 'timbu!', 'tabor' tabul' and tabla all are modified name, came from the word tabalu.”
+                </p>
+            <div class="press">
+                <form action="history.html">
+                    <button type="submit" class="button">History</button>
+                  </form>
+
+                  <form action="roots.html">
+                    <button type="submit" class="button">Roots</button>
+                  </form>
+
+                  <form action="gallery.html">
+                    <button type="submit" class="button">Gallery</button>
+                  </form>
+
+            </div>
+               
+          </div>
+        </main>
+        <footer>
+          <p>Designed with ❤ by Anshit</p>
+        </footer>
+      </div>
+ </div>
+ 
+
+  <script>
+    // Get the instrument name element
+const instrumentName = document.querySelector(".instrument-info h2");
+
+// Function to update the instrument name
+function updateInstrumentName() {
+  const newInstrumentName = "New Instrument Name";
+  instrumentName.textContent = newInstrumentName;
+}
+
+// Call the updateInstrumentName function
+updateInstrumentName();
+
+  </script>
+</body>
+</html>
